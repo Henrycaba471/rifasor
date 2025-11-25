@@ -168,6 +168,7 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: calc(100vh - 15rem);
+    padding: 2rem 0;
 }
 
 .content .description {

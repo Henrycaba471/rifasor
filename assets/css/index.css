@@ -30,8 +30,7 @@
 }
 
 .navbar .logo .title-principal {
-    font-size: 3rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
     text-transform: uppercase;
     color: #9D21AD;
     font-family: "Audiowide", sans-serif;
@@ -48,7 +47,7 @@
     color: #D39E31;
     font-family: "Pacifico", cursive;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-top: -1rem;
     text-align: left;
 }

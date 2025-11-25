@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Boldonse&family=Pacifico&display=swap"rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <title>RIFASOR™ Rifas y Sorteos | Registrarse</title>
+</head>
+<body>
+    <form action="" class="form-register-rifasor">
+        <section class="logo-header-form">
+            <a href="index.html"><img src="assets/images/logo.png" alt="logo Rifasor" width="200"></a>
+            <div class="name-page-form">
+                <span class="title-principal-form">Rifasor</span>
+                <span class="logo-text-form">Rifas y sorteos</span>
+            </div>
+        </section>
+        <section class="register-form-section">
+            <h2>Formulario de registro</h2>
+            <div class="input-group">
+                <label for="username">Nombres: <span>*</span></label>
+                <input type="text" id="name" name="username" required placeholder="Escribe tu nombre"/>
+            </div>
+            <div class="input-group">
+                <label for="firstname">Primer apellido: <span>*</span></label>
+                <input type="text" id="firstname" name="firstname" required placeholder="Escribe tu primer apellido"/>
+            </div>
+            <div class="input-group">
+                <label for="lastname">Segundo apellido: <span>*</span></label>
+                <input type="text" id="lastname" name="lastname" required placeholder="Escribe tu segundo apellido"/>
+            </div>
+            <div class="input-group">
+                <label for="phone">Teléfono: <span>*</span></label>
+                <input type="number" id="phone" name="phone" required placeholder="Escribe tu numero de teléfono"/>
+            </div>
+            <div class="input-group">
+                <label for="email">Correo Electrónico: <span>*</span></label>
+                <input type="email" id="email" name="email" required placeholder="Escribe tu correo electrónico"/>
+            </div>
+            <div class="input-group">
+                <label for="password">Contraseña: <span>*</span></label>
+                <input type="password" id="password" name="password" required placeholder="Crea una contraseña"/>
+            </div>
+            <div class="input-group">
+                <label for="conf-password">Confirmar contraseña: <span>*</span></label>
+                <input type="password" id="conf-password" name="conf-password" required placeholder="Confirma tu contraseña"/>
+            </div>
+            <button type="submit" class="btn-register">Registrarse</button>
+            <p class="login-link">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        </section>
+    </form>
+</body>
+</html>

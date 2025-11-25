@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #e5e7e9e0;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.233);
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar .logo .title-principal {
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    color: #9D21AD;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.navbar .logo .name-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar .logo .logo-text {
+    color: #D39E31;
+    font-family: "Pacifico", cursive;
+    font-style: normal;
+    font-size: 2rem;
+    margin-top: -1rem;
+    text-align: left;
+}
+
+.navbar .nav-links {
+    font-size: 4.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.navbar .nav-links li {
+    list-style: none;
+}
+
+.navbar .nav-links a {
+    color: #9D21AD;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    border-bottom: .2rem solid transparent;
+}
+
+.navbar .nav-links a:hover {
+    border-bottom: .2rem solid #D39E31;
+    color: #D39E31;
+    text-shadow: 0 0 .1rem currentColor;
+}
+
+.navbar .user-actions {
+    display: flex;
+    gap: 1rem;
+    font-size: 3rem;
+}
+
+.navbar .user-actions a {
+    text-decoration: none;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    transition: background-color 0.3s, color 0.3s;
+    border: .2rem solid #9D21AD;
+    color: #9D21AD;
+}
+
+.navbar .user-actions a:hover {
+    background-color: #D39E31;
+    color: #fff;
+    border: .2rem solid #D39E31;
+
+}
+
+.menu-contenedor {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-boton {
+    color: #9D21AD;
+    padding: 1rem 2rem;
+    border-radius: .4rem;
+    transition: background-color 0.3s, color 0.3s;
+    outline: none;
+    border: none;
+    font-size: 1.8rem;
+    background-color: transparent;
+    border-bottom: .2rem solid transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-boton:hover {
+    border-bottom: .2rem solid #D39E31;
+    color: #D39E31;
+    text-shadow: 0 0 .1rem currentColor;
+    cursor: pointer;
+}
+
+.contenido-desplegable {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 2.5rem;
+    border-radius: .4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo de los Enlaces dentro del Menú */
+.contenido-desplegable a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenido-desplegable a:hover {
+    background-color: #ddd;
+}
+
+.menu-contenedor:hover .contenido-desplegable {
+    display: block;
+}
+
+.content {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-image: url('../images/10083.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 15rem);
+}
+
+.content .description {
+    border-radius: 1rem;
+    text-align: center;
+    background-image: url('../images/boletaa.png');
+    background-size: 35rem auto;
+    background-position: right center;
+    background-repeat: no-repeat;
+    min-width: 90%;
+    padding: 0 1rem;
+}
+
+.content .description .text-description {
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 75rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.content .description h1 {
+    color: #9D21AD;
+    font-size: 3.5rem;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.content .description h3 {
+    color: #9D21AD;
+    font-size: 2.5rem;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.content .description p {
+    margin-top: 1rem;
+    color: #bb7e05;
+    font-size: 2.3rem;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn-sorteos{
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #9D21AD;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase;
+    font-family: "Audiowide", sans-serif;
+
+}
+.btn-sorteos:hover {
+    background-color: #D39E31;
+    transform: scale(1.1);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #e5e7e9;
+    padding: 2rem 1rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.233);
+    gap: 2rem;
+}
+
+.footer strong {
+    color: #9D21AD;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+.footer p {
+    font-size: 2rem;
+    color: #464440;
+}
+
+.footer .redes {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer .redes img {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+/* Transición general para suavizar todos los efectos */
+.redes a img {
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50%;
+}
+
+/* Primer elemento (Facebook) - Escalar */
+.redes a:nth-child(1):hover img {
+    transform: scale(1.2);
+    box-shadow: .2rem .2rem 1rem .5rem rgb(0, 78, 247);
+    border: .2rem solid #ffffff;
+}
+
+/* Segundo elemento (WhatsApp) - Desplazar hacia arriba */
+.redes a:nth-child(2):hover img {
+    transform: scale(1.2);
+    box-shadow: .2rem .2rem 1rem .5rem rgba(28, 95, 1, 0.829);
+}
+
+/* Tercer elemento (X) - Rotar */
+.redes a:nth-child(3):hover img {
+    transform: scale(1.2);
+    box-shadow: .2rem .2rem 1rem .5rem rgba(15, 15, 15, 0.87);
+    border: .2rem solid #ffffff;
+}
+
+/* Cuarto elemento (Instagram) - Opacidad */
+.redes a:nth-child(4):hover img {
+    transform: scale(1.2);
+    box-shadow: .2rem .2rem 1rem .5rem #9d21adcb;
+    border: .2rem solid #ffffff;
+}
+
+/* Quinto elemento (GitHub) - Brillo */
+.redes a:nth-child(5):hover img {
+    transform: scale(1.2);
+    box-shadow: .2rem .2rem 1rem .5rem rgba(19, 19, 19, 0.87);
+}

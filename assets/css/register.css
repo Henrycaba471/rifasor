@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: .2rem solid #9D21AD;
+    border: .2rem solid #322A94;
     font-size: 5rem;
     border-radius: 2rem;
     gap: 1.5rem;
@@ -46,7 +46,7 @@ body {
 .title-principal-form {
     font-size: 3.5rem;
     font-weight: bold;
-    color: #9D21AD;
+    color: #322A94;
     font-family: "Audiowide", sans-serif;
     margin-top: -3rem;
     text-transform: uppercase;
@@ -67,7 +67,7 @@ body {
 }
 .register-form-section h2 {
     font-size: 2.2rem;
-    color: #9D21AD;
+    color: #322A94;
     font-family: "Boldonse", sans-serif;
     text-align: center;
     letter-spacing: .1rem;
@@ -80,7 +80,7 @@ body {
 }
 .input-group label {
     font-size: 1.2rem;
-    color: #9D21AD;
+    color: #322A94;
     font-family: "Boldonse", sans-serif;
 }
 .input-group input {
@@ -100,7 +100,7 @@ body {
     padding: 1rem;
     font-size: 2rem;
     color: #fff;
-    background-color: #9D21AD;
+    background-color: #322A94;
     border: none;
     border-radius: .5rem;
     cursor: pointer;
@@ -118,7 +118,7 @@ body {
     text-align: center;
 }
 .login-link a {
-    color: #9D21AD;
+    color: #322A94;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.7rem;

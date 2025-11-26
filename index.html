@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Boldonse&family=Pacifico&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Boldonse&family=Pacifico&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-    <title>RIFASOR™ | Rifas y Sorteos</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>RIFASOR | Rifas y Sorteos</title>
 </head>
 
 <body>
@@ -19,16 +22,17 @@
                 <div class="logo">
                     <img src="assets/images/logo.png" alt="Luckify Logo" class="logo-image" width="65" />
                     <div class="name-page">
-                        <span class="title-principal">Rifasor</span>
+                        <span class="title-principal">Rifa<span>sor</span></span>
                         <span class="logo-text">Rifas y Sorteos</span>
                     </div>
                 </div>
             </a>
             <ul class="nav-links">
-                <li><a href="">Inicio</a></li>
+                <li><a href="#inicio">Inicio</a></li>
                 <li>
                     <div class="menu-contenedor">
-                        <button class="menu-boton">Rifas</button>
+                        <button class="menu-boton">Rifas <span
+                                class="material-symbols-outlined">chevron_left</span></button>
                         <div class="contenido-desplegable">
                             <a href="#">Rifa dos cifras</a>
                             <a href="#">Rifa tres cifras</a>
@@ -46,7 +50,7 @@
             </div>
         </nav>
         <div class="content">
-            <section class="description">
+            <section class="description" id="inicio">
                 <div class="text-description">
                     <h1>Bienvenido a RIFASOR™</h1>
                     <h3> Rifas y Sorteos</h3>
@@ -56,8 +60,53 @@
                     <button class="btn-sorteos">Ver sorteos disponibles</button>
                 </div>
             </section>
+            <section class="tipos-rifas">
+                <article class="rifa dos-cifras">
+                    <h1>Rifa de dos cifras</h1>
+                    <p>Una rifa de dos cifras se basa en la selección de un número entre 00 y 99. El organizador define
+                        un premio único, que puede ser dinero en efectivo, un objeto específico (una bicicleta, un
+                        electrodoméstico) o un porcentaje de la taquilla total.</p>
+                    <button>Crear rifa de dos cifras</button>
+                </article>
+                <article class="rifa tres-cifras">
+                    <h1>Rifa de tres cifras</h1>
+                    <p>Una rifa de tres cifras se basa en la selección de un número entre 000 y 999. El organizador
+                        define un premio único, que puede ser dinero en efectivo, un objeto específico (una motocicleta,
+                        uno o varios electrodomésticos) o un porcentaje de la taquilla total.</p>
+                    <button>Crear rifa de tres cifras</button>
+                </article>
+                <article class="rifa cuatro-cifras">
+                    <h1>Rifa de cuatro cifras</h1>
+                    <p>Una rifa de cuatro cifras se basa en la selección de un número entre 0000 y 9999. El organizador
+                        define un premio único, que puede ser dinero en efectivo, un objeto específico (una motocicleta,
+                        un automóvil o hasta una vivienda) o un porcentaje de la taquilla total.</p>
+                    <button>Crear rifa de cuatro cifras</button>
+                </article>
+                <article class="rifa cuatro-cifras">
+                    <h1>Crear un sorteo</h1>
+                    <p>Un sorteo es el acto de organizar y llevar a cabo un proceso de azar diseñado para asignar un premio único o conjunto de premios a uno o varios participantes, quienes generalmente han cumplido con una condición de entrada (como comprar un boleto, registrarse, o realizar una acción promocional).</p>
+                    <button>Crear sorteo</button>
+                </article>
+            </section>
         </div>
         <footer class="footer">
+            <section class="footer-info">
+                <div class="header-footer">
+                    <img src="assets/images/logo.png" alt="logo" width="100">
+                    <h1>RIFASOR</h1>
+                    <span>Rifas y Sorteos</span>
+                </div>
+                <div class="designer">
+                    <div class="copyright">
+                        <h4>Notificación de derechos de autor</h4>
+                        <p><strong class="derechos-autor">1. Marca registrada:</strong> El nombre, logotipo, eslogan asociados con
+                            <strong class="derechos-autor">RIFASOR</strong>
+                            están protegidos como marcas comerciales registradas.</p>
+                        <p><strong class="derechos-autor">2. Secreto comercial:</strong> Algunos procedimientos o estrategias comerciales de
+                            <strong class="derechos-autor">RIFASOR</strong> están protegidos bajo la legislación de secretos comerciales.</p>
+                    </div>
+                </div>
+            </section>
             <section>
                 <p>&copy; 2026 <strong>RIFASOR™</strong>. Todos los derechos reservados.</p>
             </section>

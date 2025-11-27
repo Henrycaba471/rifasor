@@ -40,6 +40,14 @@ body {
     text-align: center;
     margin-top: -1rem;text-transform: uppercase;
 }
+.form-login-rifario .logo-header-form .name-page-form .title-principal-form span {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #d39e31;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
 .form-login-rifario .logo-header-form .name-page-form .logo-text-form{
     display: inline-block;
     color: #D39E31;

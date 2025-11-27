@@ -95,7 +95,6 @@
 
 .navbar .user-actions a {
     text-decoration: none;
-    padding: 0.8rem 1.5rem;
     border-radius: 0.5rem;
     transition: background-color 0.3s, color 0.3s;
     border: 0.2rem solid #322a94;
@@ -516,9 +515,9 @@
     border-bottom: 0.2rem solid #9d21ad;
 }
 
-    .navbar .user-actions {
+    /*.navbar .user-actions {
         display: none;
-    }
+    }*/
 
     .menu-boton {
         font-size: 2.5rem;
@@ -539,5 +538,8 @@
 @media (min-width: 601px) {
     .nav-links {
         display: flex !important; /* Fuerza a que el menú siempre sea visible en escritorio */
+    }
+    .navbar .user-actions {
+        display: flex !important; /* Fuerza a que las acciones de usuario siempre sean visibles en escritorio */
     }
 }

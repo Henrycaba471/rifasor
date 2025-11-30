@@ -26,9 +26,9 @@
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="#"><span class="material-symbols-outlined">home</span>Inicio</a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">local_activity</span>Rifas</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">local_activity</span>Crear Rifa</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">confirmation_number</span>Mis Boletas</a></li>
                     <li><a href="#"><span class="material-symbols-outlined">manage_search</span>Resultados</a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">group</span>Vendedores</a></li>
                     <li><a href="#"><span class="material-symbols-outlined">settings</span>Configuración</a></li>
                 </ul>
             </nav>
@@ -37,7 +37,7 @@
                     <li><a href="#" title="Home"><span class="material-symbols-outlined">home</span></a></li>
                     <li><a href="#" title="Rifas"><span class="material-symbols-outlined">local_activity</span></a></li>
                     <li><a href="#" title="Resultados"><span class="material-symbols-outlined">manage_search</span></a></li>
-                    <li><a href="#" title="Vendedores"><span class="material-symbols-outlined">group</span></a></li>
+                    <li><a href="#" title="Resultados"><span class="material-symbols-outlined">phone_enabled</span></a></li>
                     <li><a href="#" title="Configuración"><span class="material-symbols-outlined">settings</span></a>
                     </li>
                 </ul>
@@ -52,8 +52,8 @@
                         <img src="assets/images/balotas.jpg" alt="profile user" width="50">
                     </div>
                     <div class="user-logged">
-                        <span>Usuario Logueado Rifasor</span>
-                        <span>Rol de Usuario</span>
+                        <span id="user-logged">Usuario Logueado Rifasor</span>
+                        <span id="user-rol">Rol de Usuario</span>
                     </div>
                     <div class="menu-configuration">
                         <span class="material-symbols-outlined">chevron_left</span>
@@ -63,19 +63,19 @@
 
             <div class="dashboard-ventas">
                 <div class="card-admin-home kpi-1">
-                    <h3>Mis Rifas <span class="material-symbols-outlined">local_activity</span></h3>
+                    <h3>Mis Boletas <span class="material-symbols-outlined">confirmation_number</span></h3>
                     <p style="font-size: 2em; color: #332a94;">3</p>
                     <small>Revisar</small>
                 </div>
-                <div class="card-admin-home kpi-2">
-                    <h3>Ventas Hoy <span class="material-symbols-outlined">calendar_today</span></h3>
-                    <p style="font-size: 3rem; color: #27ae60;">$600.000</p>
-                    <small>Ventas reportadas 20</small>
-                </div>
                 <div class="card-admin-home kpi-3">
-                    <h3>Vendedores <span class="material-symbols-outlined">group</span></h3>
-                    <p style="font-size: 2em; color: #f39c12;">5</p>
-                    <small>Revisar y procesar</small>
+                    <h3>Sorteos <span class="material-symbols-outlined">group</span></h3>
+                    <p style="font-size: 2em; color: #f39c12;">0</p>
+                    <small>Revisar sorteos</small>
+                </div>
+                <div class="card-admin-home kpi-2">
+                    <h3>Rifas Disponibles <span class="material-symbols-outlined">calendar_today</span></h3>
+                    <p style="font-size: 3rem; color: #27ae60;">3</p>
+                    <small>Ver rifas</small>
                 </div>
             </div>
             <div class="card" style="margin-top: 20px;">
@@ -85,32 +85,14 @@
                     <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
                     <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
                     <li>Nuevo cliente registrado.</li>
-                    <li>Nuevo cliente registrado.</li>
-                    <li>Nuevo cliente registrado.</li>
-                    <li>Nuevo cliente registrado.</li>
-                    <li>Nuevo cliente registrado.</li>
-                    <li>Nuevo cliente registrado.</li>
-                    <li>Nuevo cliente registrado.</li>
-                    <li>Nuevo cliente registrado.</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
-                    <li>Vendedor 002 vendió una boleta: N° 1342, N° 6598</li>
                 </ul>
             </div>
         </main>
     </div>
+    <div class="contact-media">
+        <button><img src="assets/images/whatsapp.png" alt="whatsapp-icon" width="45"></button>
+    </div>
+    <script src="./assets/js/dashboard.js"></script>
 </body>
 
 </html>

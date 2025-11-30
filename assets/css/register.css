@@ -141,3 +141,15 @@ body {
     margin-top: .5rem;
     font-family: "Boldonse", sans-serif;
 }
+.btn-google-login{
+    padding: .5rem 1rem;
+    text-align: center;
+    margin: 1rem;
+    border-radius: .5rem;
+    border: none;
+    border: .2rem solid #322A94;
+    cursor: pointer;
+}
+.btn-google-login:hover{
+    background-color: #c0c0c0;
+}

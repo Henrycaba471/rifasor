@@ -35,7 +35,8 @@
         border-bottom: .2rem solid #9d21ad2d;
         padding-bottom: .5rem;
     }
-    .sidebar .menu-mobile{
+
+    .sidebar .menu-mobile {
         display: none;
     }
 
@@ -156,7 +157,7 @@
         font-size: 3rem;
     }
 
-    .card-admin-home{
+    .card-admin-home {
         background-color: white;
         padding: 2rem;
         border-radius: 1rem;
@@ -164,7 +165,8 @@
         font-size: 2rem;
         transition: all 0.5s ease-out;
     }
-    .card-admin-home:hover{
+
+    .card-admin-home:hover {
         cursor: pointer;
         box-shadow: 0 .4rem .6rem #322a94;
     }
@@ -177,15 +179,42 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    .card{
+    .card {
         font-size: 3rem;
         padding: 2rem;
     }
-    .card ul li{
+
+    .card ul li {
         font-size: 1.7rem;
         padding: .5rem 0;
     }
 
+
+
+
+
+    .contact-media {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        padding: 1rem;
+    }
+    .contact-media img{
+        border-radius: 50%;
+        transition: all .5s ease-out;
+        cursor: pointer;
+    }
+
+    .contact-media button{
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+
+    .contact-media img:hover{
+        transform: scale(1.1);
+    box-shadow: 0.2rem 0.2rem 1rem 0.5rem rgba(28, 95, 1, 0.829);
+    }
 
     @media (max-width: 800px) {
         .sidebar .header-sidebar {
@@ -193,6 +222,10 @@
         }
 
         .sidebar .menu-desktop {
+            display: none;
+        }
+
+        .contact-media {
             display: none;
         }
 
@@ -207,39 +240,43 @@
             flex-direction: column;
         }
 
-        .sidebar .menu-mobile{
+        .sidebar .menu-mobile {
             display: block;
             padding: 0 .5rem;
             background-color: #d8d8d8;
         }
 
-        .sidebar .menu-mobile ul{
+        .sidebar .menu-mobile ul {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0;
             margin: 0;
         }
-        .sidebar .menu-mobile ul li{
+
+        .sidebar .menu-mobile ul li {
             margin: 0;
             padding: 0;
             font-size: 0;
             border-radius: 50%;
         }
 
-        .sidebar .menu-mobile ul li a{
+        .sidebar .menu-mobile ul li a {
             padding: 0;
             margin: 0;
             border-radius: 50%;
             color: #322a94;
         }
-        .sidebar .menu-mobile ul li:hover, .sidebar .menu-mobile ul li a:hover{
+
+        .sidebar .menu-mobile ul li:hover,
+        .sidebar .menu-mobile ul li a:hover {
             background-color: #332a94;
             border-radius: 50%;
             color: #f4f7f6;
         }
-        .sidebar .menu-mobile ul li a span{
-            font-size: 4rem;
+
+        .sidebar .menu-mobile ul li a span {
+            font-size: 3.5rem;
             padding: .5rem;
             border-radius: 50%;
         }

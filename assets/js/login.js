@@ -63,7 +63,7 @@ loginForm.addEventListener("submit", async (e) => {
         if (backendRes.ok) {
             localStorage.setItem('authToken', idToken);
             // La ruta protegida funcionó
-            window.location.replace("http://127.0.0.1:5500/dashboard.html");
+            window.location.replace("https://www.rifasor.com/dashboard.html");
         } else {
             // El servidor (o el middleware) rechazó el token
             backendResponseDisplay.textContent =

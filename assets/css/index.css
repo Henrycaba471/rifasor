@@ -181,6 +181,87 @@
     background-repeat: no-repeat;
     padding: 2rem 0;
 }
+.ventas-rifas-disponibles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.rifa-disponibles-venta{
+    box-shadow: 0.2rem 0.2rem 1rem 0.5rem #332a947e;
+    max-width: 50rem;
+    border-radius: 1.5rem;
+    background-color: #efeef8;
+    color: #322a94;
+    margin: 1rem;
+    padding: 1rem;
+}
+.rifa-disponibles-venta .card-rifa{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap
+}
+.rifa-disponibles-venta .card-rifa .card-header{
+    text-align: center;
+    padding: .5rem;
+}
+.rifa-disponibles-venta .card-rifa .card-header h3{
+    text-align: center;
+    padding: .5rem;
+    font-size: 2.5rem;
+    font-family: "Audiowide", sans-serif;
+    text-transform: uppercase;
+}
+.rifa-disponibles-venta .card-rifa .card-header span{
+    display: block;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+.rifa-disponibles-venta .card-rifa .card-header .proveedor-rifa{
+    font-family: pacifico;
+    font-family: 'Boldonse', sans-serif;
+    font-size: 1rem;
+}
+
+.rifa-disponibles-venta .card-rifa .imagen-rifa img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rifa-disponibles-venta .card-rifa .terminos-rifa{
+    padding: .5rem;
+}
+.rifa-disponibles-venta .card-rifa .terminos-rifa span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+.rifa-disponibles-venta .card-rifa .valor-rifa{
+    font-size: 4rem;
+    text-align: right;
+    padding: 1rem;
+}
+.rifa-disponibles-venta .card-rifa .valor-rifa p{
+    font-family: "Audiowide", sans-serif;
+}
+.rifa-disponibles-venta .card-rifa .btn-action-rifa{
+    padding: 1rem;
+}
+.rifa-disponibles-venta .card-rifa .btn-action-rifa button{
+    font-size: 1.5rem;
+    border: .2rem solid #322a94;
+    border-radius: 1.5rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-family: "Boldonse", sans-serif;
+    color: #322a94;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+.rifa-disponibles-venta .card-rifa .btn-action-rifa button:hover{
+    background-color: #322a94;
+    color: #e0dddd;
+}
 
 .content .description {
     display: flex;

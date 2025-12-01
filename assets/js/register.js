@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return alert("Las contraseñas no coinciden");
         }
 
-        const response = await fetch("http://localhost:3000/api/signup", {
+        const response = await fetch("http://localhost:3000/api/rifasor/register", {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log("Sesión iniciada con éxito. UID:", user.uid);
 
                 // 3. Opcional: Llamada al endpoint protegido (/api/home) para confirmar sesión
-                const homeResponse = await fetch('http://localhost:3000/api/home', {
+                const homeResponse = await fetch('http://localhost:3000/api/rifasor/home', {
                     method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${idToken}`,
@@ -124,6 +124,5 @@ document.addEventListener('DOMContentLoaded', () => {
             // Si el backend no devolvió el customToken (aunque debería)
             alert("Registro exitoso, pero no se pudo iniciar sesión automáticamente. Inicie sesión manualmente.");
         }
-
     });
 });

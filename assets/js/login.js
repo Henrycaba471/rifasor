@@ -47,7 +47,7 @@ loginForm.addEventListener("submit", async (e) => {
 
         // --- PASO C: Llamar a TU Backend con el Token ---
         // Tu servidor escuchando en el puerto 3000
-        const backendRes = await fetch("http://localhost:3000/api/home", {
+        const backendRes = await fetch("http://localhost:3000/api/rifasor/home", {
             method: "GET",
             headers: {
                 // Enviamos el token en el formato que espera el middleware: Bearer <token>
@@ -58,12 +58,10 @@ loginForm.addEventListener("submit", async (e) => {
 
         const backendData = await backendRes.json();
 
-        console.log(backendData);
-        
         if (backendRes.ok) {
             localStorage.setItem('authToken', idToken);
             // La ruta protegida funcionó
-            window.location.replace("https://www.rifasor.com/dashboard.html");
+            window.location.replace("http://127.0.0.1:5500/dashboard.html");
         } else {
             // El servidor (o el middleware) rechazó el token
             backendResponseDisplay.textContent =

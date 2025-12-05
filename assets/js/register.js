@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!clientRegister.firstname || clientRegister.firstname === "" || clientRegister.firstname === null || clientRegister.firstname === undefined) {
             return alert("Los campos con * son obligatorios");
         }
-
+/*
         if (!clientRegister.lastname || clientRegister.lastname === "" || clientRegister.lastname === null || clientRegister.lastname === undefined) {
             return alert("Los campos con * son obligatorios");
         }
-
-        if (clientRegister.name.length < 3 || clientRegister.firstname.length < 3 || clientRegister.lastname.length < 3) {
+*/
+        if (clientRegister.name.length < 3 || clientRegister.firstname.length < 3) {
             return alert("Los nombres y apellidos deben contener mínimo 3 letras cada uno")
         }
 

@@ -169,262 +169,44 @@
 }
 
 .content {
-    font-size: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    background-image: url("../images/10083.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.ventas-rifas-disponibles {
+    font-size: 3rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
-
-.ventas-rifas-disponibles .title-section-disponibles {
+.content h1{
     width: 100%;
+    text-transform: uppercase;
     text-align: center;
-    background-color: #d4d4d4d7;
-}
-
-.ventas-rifas-disponibles .title-section-disponibles h3 {
-    font-size: 2rem;
     font-family: "Boldonse", sans-serif;
-    padding: 1rem 0;
+    padding: 2rem 1rem;
     color: #322a94;
 }
-
-.rifa-disponibles-venta {
-    box-shadow: 0.2rem 0.2rem 1rem 0.5rem #332a947e;
-    max-width: 35rem;
-    border-radius: 1.5rem;
-    background-color: #efeef8;
-    color: #322a94;
-    margin: 1rem;
+.data-rifa, .data-rifa-talonario{
+    flex: 1 0 50%;
     padding: 1rem;
-    display: flex;
-    justify-content: stretch;
-}
-
-.rifa-disponibles-venta .card-rifa {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.rifa-disponibles-venta .card-rifa .card-header {
     text-align: center;
-    padding: .5rem;
 }
-
-.rifa-disponibles-venta .card-rifa .card-header h3 {
+.data-rifa h2, .data-rifa-talonario h2{
     text-align: center;
-    padding: .5rem;
+    font-size: 3rem;
+    color: #322a94;
+    padding: 1rem;
+}
+.numeros-rifa .line-numbers button{
+    width: 7rem;
+    height: 6rem;
     font-size: 1.8rem;
-    font-family: "Audiowide", sans-serif;
-    text-transform: uppercase;
-}
-
-.rifa-disponibles-venta .card-rifa .card-header span {
-    display: block;
-    font-size: 1.2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
-}
-
-.rifa-disponibles-venta .card-rifa .card-header .proveedor-rifa {
-    font-family: pacifico;
-    font-family: 'Boldonse', sans-serif;
-    font-size: 1rem;
-}
-
-.rifa-disponibles-venta .card-rifa .imagen-rifa img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.rifa-disponibles-venta .card-rifa .terminos-rifa {
-    padding: .5rem;
-}
-
-.rifa-disponibles-venta .card-rifa .terminos-rifa span {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
-}
-
-.rifa-disponibles-venta .card-rifa .valor-rifa {
-    font-size: 2.5rem;
-    text-align: right;
-    padding: 1rem;
-}
-
-.rifa-disponibles-venta .card-rifa .valor-rifa p {
-    font-family: "Audiowide", sans-serif;
-}
-
-.rifa-disponibles-venta .card-rifa .btn-action-rifa {
-    padding: 1rem;
-    display: flex;
-    gap: .5rem;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.rifa-disponibles-venta .card-rifa .btn-action-rifa button {
-    font-size: 1.3rem;
+    font-family: "Boldonse", sans-serif;
+    margin: .2rem;
     border: .2rem solid #322a94;
-    border-radius: 1.5rem;
-    padding: 1rem 2rem;
-    text-transform: uppercase;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #322a94;
-    transition: all .5s ease-out;
-    cursor: pointer;
-    font-weight: 900;
-}
-
-.rifa-disponibles-venta .card-rifa .btn-action-rifa button:hover {
-    background-color: #322a94;
-    color: #e0dddd;
-}
-
-.content .description {
-    display: flex;
-    align-items: center;
     border-radius: 1rem;
-    text-align: center;
-    background-image: url("../images/boletaa.png");
-    background-size: 35rem auto;
-    background-position: right center;
-    background-repeat: no-repeat;
-    min-width: 90%;
-    padding: 0 1rem;
-    min-height: calc(100vh - 15rem);
-}
+    cursor: pointer;
 
-.content .description .text-description {
-    padding: 2rem;
-    border-radius: 1rem;
-    max-width: 75rem;
-    background-color: #e2e2e2b9;
 }
-
-.content .description h1 {
-    color: #322a94;
-    font-size: 3.5rem;
-    font-family: "Audiowide", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.content .description h3 {
-    color: #9d21ad;
-    font-size: 2.5rem;
-    font-family: "Audiowide", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.content .description p {
-    margin-top: 1rem;
-    color: #464440;
-    font-size: 2.3rem;
-    text-align: left;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
-}
-
-.btn-sorteos {
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    font-size: 2rem;
-    color: #fff;
+.numeros-rifa .line-numbers button:hover{
     background-color: #322a94;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    text-transform: uppercase;
-    font-family: "Audiowide", sans-serif;
-}
-
-.btn-sorteos:hover {
-    background-color: #d39e31;
-    transform: scale(1.1);
-}
-
-.tipos-rifas {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    gap: 2rem;
-    padding: 2rem 0;
-    flex-wrap: wrap;
-    padding: 1rem;
-}
-
-.tipos-rifas .rifa {
-    display: flex;
-    flex-direction: column;
-    background-color: #e2e2e2b9;
-    padding: 2rem;
-    border-radius: 1rem;
-    text-align: center;
-    box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.651);
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    max-width: 40rem;
-}
-
-.tipos-rifas .rifa:hover {
-    transform: translateY(-1rem);
-    box-shadow: 0 0.2rem 2rem #322a94;
-}
-
-.tipos-rifas .rifa h1 {
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    color: #322a94;
-    font-family: boldonse, sans-serif;
-    margin-bottom: 0.8rem;
-    letter-spacing: 0.2rem;
-}
-
-.tipos-rifas .rifa p {
-    font-size: 2rem;
-    color: #464440;
-    margin-bottom: 1.5rem;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
-    text-align: left;
-}
-
-.tipos-rifas .rifa button {
-    align-self: center;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #322a94;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    text-transform: uppercase;
-    font-family: boldonse, sans-serif;
-    margin-top: auto;
-    width: 70%;
-    letter-spacing: 0.1rem;
-}
-
-.tipos-rifas .rifa button:hover {
-    background-color: #d39e31;
+    color: #ddd;
 }
 
 .footer {
@@ -652,9 +434,6 @@
         background-color: #d39d31d0;
         border: .1rem solid #9d21add0;
     }
-    .terminos-rifa-modal{
-        min-width: 95%;
-    }
 }
 
 @media (min-width: 601px) {
@@ -668,117 +447,8 @@
         /* Fuerza a que las acciones de usuario siempre sean visibles en escritorio */
     }
 }
-
-
-/* Estilo del Contenedor de la Modal */
-.rifa-disponible-venta .card-rifa-modal{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.modal-header-rifa{
-    max-width: 35rem;
-}
-
-.card-header-modal h3{
-    font-size: 2rem;
-    font-family: "Boldonse", sans-serif;
-    color: #322a94;
-    text-align: center;
-}
-.card-header-modal span {
-    font-family: "Boldonse", sans-serif;
-    font-size: 1.5rem;
-    display: block;
-    text-align: center;
-    color: #322a94;
-}
-.terminos-rifa-modal{
-    max-width: 45%;
-    text-align: left;
-}
-.valor-rifa-modal p{
-    font-size: 3rem;
-}
-.btn-action-rifa-modal button{
-    font-size: 3rem;
-    border: .2rem solid #322a94;
-    border-radius: 2rem;
-    padding: 1rem 3rem;
-    font-family: "Audiowide", sans-serif;
-    color: #322a94;
-    cursor: pointer;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-.btn-action-rifa-modal button:hover{
-    background-color: #322a94;
-    color: #e5e7e9;
-}
-.valor-rifa-modal p{
-    font-family: "Boldonse", sans-serif;
-    color: #322a94;
-    font-size: 2rem;
-}
-
-.terminos-rifa-modal span{
-    font-size: 2rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: #322a94;
-}
-
-.btn-action-modal{
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-}
-.btn-action-rifa-modal
-
-.rifa-disponible-venta .card-rifa
-
-.rifa-disponible-venta .card-rifa-modal
-.rifa-disponible-venta .imagen-rifa-modal{
-    width: 30rem;
-}
-
-
-/* Estilo del Contenido de la Modal */
-.modal-content {
-    display: none;
-    border-radius: 8px;
-    width: 95%;
-    max-width: 80rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.39);
-    position: relative;
-    font-size: 3rem;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ece7e7f3;
-    max-height: 100vh;
-    overflow-y: scroll;
-    padding-top: 1.5rem;
-}
-
-/* Estilo del Botón de Cierre (la X) */
-.close-btn {
-    color: #aaa;
-    float: right;
-    /* Lo pone en la esquina superior derecha */
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+@media (max-width: 700px) {
+    .content {
+        flex-direction: column;
+    }
 }

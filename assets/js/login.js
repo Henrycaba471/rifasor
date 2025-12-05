@@ -1,13 +1,8 @@
 
 // Importar solo los módulos que necesitamos
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-import {
-    getAuth,
-    signInWithEmailAndPassword,
-} from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 
-// 2. Configuración de Firebase (REEMPLAZA ESTOS VALORES)
-// ESTA CONFIGURACIÓN ES PÚBLICA y SEGURA
 const firebaseConfig = {
     apiKey: "AIzaSyCUabTq7BNH5n3mn8YYnWJWquf9deqthzw",
     authDomain: "api-rest-rifasor.firebaseapp.com",
@@ -21,9 +16,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-// ... (El resto del script de lógica va aquí abajo) ...
-// ... (continuación del código JavaScript) ...
-
 const loginForm = document.querySelector(".form-login-rifario");
 
 loginForm.addEventListener("submit", async (e) => {
@@ -34,8 +26,6 @@ loginForm.addEventListener("submit", async (e) => {
 
     try {
         // --- PASO A: Login directo con Firebase (Google) ---
-        console.log(email, password);
-
         const userCredential = await signInWithEmailAndPassword(
             auth,
             email,
